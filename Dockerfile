@@ -10,6 +10,6 @@ RUN git clone https://github.com/hsjsa/magneto-for-group.git .
 RUN pip3 install -r requirements.txt
 RUN apt-get install libmagic-dev -y
 RUN pip3 install libmagic
-RUN ls
+RUN chmod +x start.sh aria.sh
 COPY . .
-CMD ["bash","fuck.sh"]
+CMD ["bash","start.sh"]
